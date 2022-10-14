@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+h1{
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: Comic Sans MS;
+}
+#container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+.content{
+    text-align: center;
+    border-right: 2px red solid;
+}
+.content h3{
+    text-align: center;
+    font-family: Comic Sans MS;
+}
+.content ul{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 40px;
+    font-size: 1.2em;
+    text-align: left;
+    margin-left: 25%;
+    padding-left: 0;
+    list-style: none;
+}
+
+.content ul li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+.content img{
+    width: 20%;
+}
