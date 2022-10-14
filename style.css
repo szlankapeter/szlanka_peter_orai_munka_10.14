@@ -16,12 +16,27 @@ h1{
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
 }
 .content{
     text-align: center;
     border-right: 2px red solid;
 }
+@media only screen and (max-width: 500px){
+
+    #container{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .content{
+        border-right: none;
+    }
+
+}
+
+
+
 .content h3{
     text-align: center;
     font-family: Comic Sans MS;
